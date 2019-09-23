@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Peliculas TUDAI</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="estilos.css">
+  <script src="js/captcha.js"></script>
+  <script src="js/rest.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="titulo">
+        <h1 class="site-heading text-center text-white d-none d-lg-block">
+          <span class="site-heading-lower">Peliculas TUDAI</span>
+        </h1>
+      </div>
+    </header>
+    <nav class="barranavegacion navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Peliculas TUDAI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" id="linkbotonera" target="_self" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" id="linkbotonera" target="_self"
+                href="accion.html">Accion</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" id="linkbotonera" target="_self"
+                href="terror.html">Terror</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" id="linkbotonera" target="_self"
+                href="comedia.html">Comedia</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <article class="peliculasinicio">
+      <div class="row">
+        <section class="col-md-4">
+          <img src="imagenes/mataromoriraccion.jpg" class="img-responsive img-thumbnail"
+            alt="matar o morir, pelicula de accion">
+          <p class="parrafosinicio">Matar o morir (Acción)</p>
+        </section>
+        <section class="col-md-4">
+          <img src="imagenes/iterror.jpg" class="img-responsive img-thumbnail" alt="it, pelicula de terror">
+          <p class="parrafosinicio">It (Terror)</p>
+        </section>
+        <section class="col-md-4">
+          <img src="imagenes/unespiaymediocomedia.jpg" class="img-responsive img-thumbnail"
+            alt="un espia y medio, pelicula de comedia">
+          <p class="parrafosinicio">Un espía y medio (Comedia)</p>
+        </section>
+      </div>
+      <section class="align-self-start">
+        <article class="text-center contacto">
+          <div>
+            <form>
+              <div class="row">
+                <div class="col-4">
+                  <p>Contacto:</p>
+                </div>
+                <div class="col-11 input-group mb-2">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Nombre y Apellido:</span>
+                  </div>
+                  <input type="text" aria-label="First name" class="form-control">
+                  <input type="text" aria-label="Last name" class="form-control">
+                </div>
+                <div class="col-8 mb-3">
+                  <div class="col-md-4 col-5 input-group-text" id="inputGroup-sizing-sm">Edad:</div><input class="col-12"
+                    type="date" id="contactodatos" name="edad" />
+                </div>
+                <div class="col-8 input-group mb-3">
+                  <input type="text" class="col-12 form-control" placeholder="Usuario email" aria-label="Usuario email"
+                    aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <span class="col-12 input-group-text" id="basic-addon2">@gmail.com</span>
+                  </div>
+                </div>
+                <div class="col-12 input-group mb-2">
+                  <div class="col-12 input-group-prepend">
+                    <span class="input-group-text">Comentarios:</span>
+                  </div>
+                  <textarea class="col-8 form-control" aria-label="With textarea"></textarea>
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                  <div class="col-12 input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Complete el captcha:</span>
+                  </div>
+                  <div class="col-7">
+                    <input type="text" class="col-12" name="captcha" id="captchaaleatorio" disabled>
+                  </div>
+                  <div class="col-7">
+                    <input type="text" class="form-control" id="respusuario" aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-sm">
+                  </div>
+                  <div class="col-6">
+                    <button type="button" class="btn btn-light" id="botonformulario">Enviar</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </article>
+      </section>
+      <section class="align-self-end">
+        <article class="text-center">
+          <div>
+            <div class="tabladepelis" style="width: 70%;">
+              <p>Películas con mas recaudaciones</p>
+              <div>
+                <p> <label for="">Película:</label> <input type="text" id="primerinput" name="primerinput"></p>
+                <p> <label for="">Genero:</label> <input type="text" id="segundoinput" name="segundoinput"></p>
+                <p> <label for="">Año de estreno:</label> <input type="text" id="tercerinput" name="tercerinput"></p>
+                <p>
+                  <button class="btn btn-dark" id="js-btnpost">agregar</button>
+                  <button class="btn btn-dark" id="btnborrar">borrar</button>
+                  <button class="btn btn-dark" id="btnagregar3">agregar 3</button>
+                </p>
+              </div>
+              <table style="margin: 0 auto;">
+                <tr class="titulodetabla">
+                  <td>Película</td>
+                  <td>Genero</td>
+                  <td>Año de estreno</td>
+                </tr>
+                <tbody id="tabla">
+                </tbody>
+              </table>
+              <div id="div"></div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </article>
+    <footer class="icons">
+      <a href="https://www.facebook.com/groups/lacasadepapel/" target="_blank"><img class="redes"
+          src="imagenes/face.png" alt="logo facebook"></a>
+      <a href="https://twitter.com/pelisresumidas" target="_blank"><img class="redes" src="imagenes/twitter.png"
+          alt="logo twitter"></a>
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRrrqGqFHLNkRqwVNvXbVWTmxJXNWtncngppjTcWTJbhklQgbWrwJRsWMftvKXqgmxPfTj"
+        target="_blank"><img class="redes" src="imagenes/gmail.png" alt="logo mensaje"></a>
+    </footer>
+  </div>
+</body>
+
+</html>
